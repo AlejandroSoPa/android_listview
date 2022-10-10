@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                for (int i=0;i<500;i++) {
+                for (int i=0;i<50;i++) {
                     records.add(new Record(100, "Anonymous"));
                 }
                 // notificar l'adapter dels canvis al model
