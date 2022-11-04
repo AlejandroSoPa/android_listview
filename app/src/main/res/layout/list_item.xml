@@ -5,26 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <LinearLayout
-        android:layout_width="411dp"
-        android:layout_height="39dp"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/xin" />
 
         <TextView
             android:id="@+id/nom"
-            android:layout_width="203dp"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
             android:layout_weight="1"
-            android:text="Nom" />
+            android:text="TextView" />
 
         <TextView
             android:id="@+id/intents"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_weight="1"
-            android:text="Intents" />
+            android:text="TextView" />
+
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
